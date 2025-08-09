@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rose Gold Hi Animation</title>
+  <title>Rose Gold Animation</title>
   <style>
     /* Full screen setup */
     * {
@@ -23,7 +23,7 @@
 
     .container {
       text-align: center;
-      font-size: 60px;
+      font-size: 40px;
       color: #b76e79; /* Rose Gold color */
       font-weight: bold;
       animation: fadeIn 2s ease-in-out;
@@ -35,6 +35,42 @@
         opacity: 0;
         transform: translateY(-50px);
       }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container span {
+      display: inline-block;
+      animation: colorChange 4s infinite;
+    }
+
+    /* Rose gold color animation */
+    @keyframes colorChange {
+      0% { color: #b76e79; }
+      25% { color: #d4a0a7; }
+      50% { color: #b76e79; }
+      75% { color: #d4a0a7; }
+      100% { color: #b76e79; }
+    }
+
+    .tagline {
+      font-size: 24px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <span>SAGAR RATAN FOUNDATION</span>
+    <div class="tagline"><span>CARING BEYOND BOUNDARIES 🤎
+    </span></div>
+  </div>
+
+</body>
+</html>      }
       100% {
         opacity: 1;
         transform: translateY(0);
